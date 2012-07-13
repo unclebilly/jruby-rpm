@@ -1,5 +1,5 @@
 Name:    jruby
-Version:  1.6.7
+Version:  1.6.7.2
 Release:  1%{?dist}
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 
@@ -61,6 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 /usr/bin
 
 %changelog
+* Tue Jul 13 2012 Jorge Falcão <falcao@intelie.com.br> - 1.6.7.2-1
+- Update to Rubygems 1.8.24
+
 * Tue Apr 10 2012 Jorge Falcão <falcao@intelie.com.br> - 1.6.7-1
 - bump version
 
