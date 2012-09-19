@@ -1,5 +1,5 @@
 Name:    jruby
-Version:  1.6.7.2
+Version:  1.6.8
 Release:  1%{?dist}
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 
@@ -37,8 +37,9 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}
 mkdir -p $RPM_BUILD_ROOT/opt
 mkdir -p $RPM_BUILD_ROOT/%{_docdir}/%{name}
+pwd
 cp %{SOURCE1} $RPM_BUILD_ROOT/%{_bindir}/
-cp %{SOURCE2}  $RPM_BUILD_ROOT/%{_bindir}/
+cp %{SOURCE2} $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE3} $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE4} $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE5} $RPM_BUILD_ROOT/%{_bindir}/
@@ -47,7 +48,7 @@ cp %{SOURCE7} $RPM_BUILD_ROOT/%{_bindir}/
 cp $RPM_BUILD_DIR/%{name}-%{version}/README $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 cp $RPM_BUILD_DIR/%{name}-%{version}/LICENSE.RUBY $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 cp $RPM_BUILD_DIR/%{name}-%{version}/COPYING $RPM_BUILD_ROOT/%{_docdir}/%{name}/
-cp -r  $RPM_BUILD_DIR/%{name}-%{version} $RPM_BUILD_ROOT/opt/jruby
+cp -r $RPM_BUILD_DIR/%{name}-%{version} $RPM_BUILD_ROOT/opt/jruby
 cp -r $RPM_BUILD_DIR/%{name}-%{version}/docs/* $RPM_BUILD_ROOT/%{_docdir}/%{name}
 
 %clean
@@ -61,6 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 /usr/bin
 
 %changelog
+* Tue Sep 18 2012 Jorge Falcão <falcao@intelie.com.br> - 1.6.8
+- See http://jruby.org/2012/09/18/jruby-1-6-8
+
 * Tue Jul 13 2012 Jorge Falcão <falcao@intelie.com.br> - 1.6.7.2-1
 - Update to Rubygems 1.8.24
 
