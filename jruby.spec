@@ -45,7 +45,6 @@ cp %{SOURCE4} $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE5} $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE6} $RPM_BUILD_ROOT/%{_bindir}/
 cp %{SOURCE7} $RPM_BUILD_ROOT/%{_bindir}/
-cp $RPM_BUILD_DIR/%{name}-%{version}/README $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 cp $RPM_BUILD_DIR/%{name}-%{version}/LICENSE.RUBY $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 cp $RPM_BUILD_DIR/%{name}-%{version}/COPYING $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 cp -r $RPM_BUILD_DIR/%{name}-%{version} $RPM_BUILD_ROOT/opt/jruby
