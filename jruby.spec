@@ -1,5 +1,5 @@
 Name:    jruby
-Version:  1.6.8
+Version:  1.7.0
 Release:  1%{?dist}
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 
@@ -20,7 +20,7 @@ Requires: java-1.6.0-openjdk
 100% Pure-Java Implementation of the Ruby Programming Language
 
 Features:
-Ruby 1.8.7 Compatible
+Ruby 1.9.* Compatible
 High performance
 Real threading
 Vast array of libraries
@@ -60,6 +60,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc %{_docdir}/%{name}
 /opt/jruby
 /usr/bin
+
+%changelog
+* Wed Nov 07 2012 Jorge Falcão <falcao@intelie.com.br> - 1.7.0
+- See http://jruby.org/2012/10/22/jruby-1-7-0.html
 
 %changelog
 * Tue Sep 18 2012 Jorge Falcão <falcao@intelie.com.br> - 1.6.8
