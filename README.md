@@ -1,10 +1,10 @@
 About
 =====
-This little project builds an RPM suitable for installing JRuby on your RPM-compatible system. 
+This little project builds an RPM suitable for installing JRuby on your RPM-compatible system. It allows you to specify the version of JRuby you want, downloads the binaries for you, and builds a `noarch` RPM package out of it. 
 
 Prerequisites
 =============
-* You will need the `rpm-build` package: 
+It might be obvious, but you need `rpm`.  Also, you will need the `rpm-build` package, which is not obvious:
     
     sudo yum install rpm-build
 
