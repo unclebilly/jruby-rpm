@@ -1,5 +1,5 @@
 Name:    jruby
-Version:  1.7.4
+Version:  JRUBY_VERSION
 Release:  1%{?dist}
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 

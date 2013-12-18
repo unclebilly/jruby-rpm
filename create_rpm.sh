@@ -33,9 +33,10 @@ file=$srcdir/jruby-bin-$JRUBY_VERSION.tar.gz
 
 cp jgem  jirb  jrake  jrdoc  jri  jruby  jrubyc $srcdir
 
-sed -i "/JRUBY_VERSION/c\$JRUBY_VERSION" jruby.spec
+# Replace JRUBY_VERSION in the template spec file and output to the spec file. 
+cat jruby.spec.template | sed "s/JRUBY_VERSION/$JRUBY_VERSION/g" > jruby.spec
 
-# build rpm
+# Now build the rpm!
 rpmbuild -bb jruby.spec
 
 echo "Done. Now check $rpmdir for the RPM"
