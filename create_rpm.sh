@@ -11,8 +11,18 @@ usage() {
 
 JRUBY_VERSION=$1
 if [ -z "$JRUBY_VERSION" ]; then 
+  echo "ERROR: JRuby version is required."
+  echo
   usage
   exit 1
+fi
+
+rpmbuild=`which rpmbuild`
+if [ ! -f "$rpmbuild" ]; then
+  echo "ERROR: rpmbuild is not installed on this system or is not on your PATH. Run yum install rpm-build to install."
+  echo
+  usage
+  exit 2
 fi
 
 srcdir=`rpm --eval '%{_sourcedir}'`
