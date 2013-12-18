@@ -1,3 +1,6 @@
+# Prevents the "Arch dependent binaries in noarch package" error
+%define _binaries_in_noarch_packages_terminate_build   0
+
 Name:    jruby
 Version:  JRUBY_VERSION
 Release:  1%{?dist}
