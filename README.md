@@ -1,6 +1,6 @@
 About
 =====
-This little project builds an RPM suitable for installing JRuby on your RPM-compatible system. It allows you to specify the version of JRuby you want, downloads the binaries for you, and builds a `noarch` RPM package out of it. 
+This little project builds an RPM suitable for installing JRuby on your RPM-compatible system. It allows you to specify the version of JRuby you want, downloads the binaries for you, and builds a `noarch` RPM package out of it.  This project assumes you are running it on a RedHat or CentOS system.
 
 Prerequisites
 =============
