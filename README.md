@@ -14,5 +14,5 @@ Building the RPM
     # download binaries and build jruby-1.7.9 RPM
     ./create_rpm.sh 1.7.9 
 
-    # download binaries and build jruby-1.7.0
+    # download binaries and build jruby-1.7.0 RPM
     ./create_rpm.sh 1.7.0
