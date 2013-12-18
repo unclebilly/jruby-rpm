@@ -1,5 +1,5 @@
 Name:    jruby
-Version:  1.7.0
+Version:  JRUBY_VERSION
 Release:  1%{?dist}
 Summary:  Pure-Java Implementation of the Ruby Programming Language
 Group:    Development/System 
@@ -13,14 +13,14 @@ Source4:  jrdoc
 Source5:  jrubyc
 Source6:  jri
 Source7:  jgem
+BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-Requires: java-1.6.0-openjdk
+Requires: jdk
 
 %description
 100% Pure-Java Implementation of the Ruby Programming Language
 
 Features:
-Ruby 1.9.* Compatible
 High performance
 Real threading
 Vast array of libraries
